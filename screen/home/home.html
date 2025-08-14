@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/screen/home/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="/js/firebase-config.js" defer></script>
+  <script src="/js/home.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Mobintix</div>
+    <ul class="nav-links">
+      <li><a href="/screen/home/home.html" class="active">Home</a></li>
+      <li><a href="/screen/About/about.html">About</a></li>
+      <li><a href="/screen/contact/contact.html">Contact</a></li>
+      </ul><button id="logoutBtn" class="logout-btn">Logout</button></ul>
+  </nav>
+  <header class="hero">
+    <h1>👋 Welcome, <span id="userEmail">User</span></h1>
+    <p>Explore latest job interviews, roles, and openings.</p>
+  </header>
+
+  <section class="interviews-section">
+    <h2>🔥 Recent Interviews</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Frontend Developer</h3>
+        <p>React, HTML, CSS, JavaScript</p>
+        <a href="#">View Details</a>
+      </div>
+      <div class="card">
+        <h3>Flutter Developer</h3>
+        <p>Dart, Firebase, UI/UX</p>
+        <a href="#">View Details</a>
+      </div>
+      <div class="card">
+        <h3>Backend Developer</h3>
+        <p>Node.js, MongoDB, REST APIs</p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
